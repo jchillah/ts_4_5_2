@@ -13,9 +13,9 @@ class MyIconsRowState extends State<MyIconsRow> {
 
   Color getRandomColor() {
     return Color.fromRGBO(
-      random.nextInt(256), // Red
-      random.nextInt(256), // Green
-      random.nextInt(256), // Blue
+      random.nextInt(256), 
+      random.nextInt(256), 
+      random.nextInt(256), 
       1.0, // Opacity
     );
   }
@@ -31,8 +31,8 @@ class MyIconsRowState extends State<MyIconsRow> {
           },
           icon: Icon(Icons.favorite, color: getRandomColor(), size: 48),
         ),
-        Icon(Icons.bookmark, color: Colors.green, size: 48),
-        Icon(Icons.star, color: Colors.blue, size: 48),
+        const Icon(Icons.bookmark, color: Colors.green, size: 48),
+        const Icon(Icons.star, color: Colors.blue, size: 48),
       ],
     );
   }
